@@ -1,0 +1,43 @@
+.home-container {
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 0.25rem gray;
+}
+
+.home-course-container {
+  padding: 0.5rem;
+  text-align: justify;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.125rem lightgray;
+}
+
+.home-img {
+  height: 80px;
+  position: relative;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  z-index: -1;
+  animation-name: home-img-animation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  box-shadow: 0 0 0.125rem lightgray;
+}
+
+@keyframes home-img-animation {
+  0% {
+    left: 0px;
+  }
+
+  50% {
+    left: 488px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
